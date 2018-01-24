@@ -94,9 +94,20 @@
 		</div>
     </div>
   </div>
-  		<div class="marketing-site-hero-content" id="services-bottom-padding">
-  			<a href="{% url "team" %}" class="round button">meet the team</a>
-  		</div>
 </div>
+</div>
+<div class="container">
+	<div class="services" id="services-text-bottom">
+		<div class="marketing-site-hero-content">
+			<p class="subheader">For current 3VRM news, or discover the latest in Information Security and Vendor Risk Management.</p>
+			<a href="{% url "news" %}" class="round button">click here</a> </h4>
+			<p class="subheader"></p>
+			<a href="{% url "team" %}" class="round button">click here</a>
+			<h4> To contact us  <a href="{% url "contactUs" %}" class="round button">click here</a> </h4>
+		</div>
+	</div>
+		<div class="services" id="services-graphic-bottom">
+			<img src="{% static "media/services-bottom.png" %}">
+	</div>
 </div>
 {% endblock %}

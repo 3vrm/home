@@ -281,7 +281,15 @@ body {
 #services-bottom-padding {
   padding-bottom: 200px;
 }
+
+#services-graphic-bottom{
+    padding: 70px 60px 100px 60px;
 }
+
+#services-text-bottom{
+    padding: 100px 20px 60px 40px;
+}
+
 /*about page formatting*/
 
 #about-info{
@@ -388,11 +396,26 @@ body {
 }
 
 #approach-text-bottom{
-    padding: 200px 20px 60px 40px;
+    padding: 100px 20px 60px 40px;
 }
 
 /*news feed page*/
 .twitter-feed{
   padding: 5%;
   margin: auto;
+}
+
+/*contact us page */
+
+#contact-intro{
+    padding: 60px 60px 20px 60px;
+}
+
+.contact{
+  width: 100%;
+  flex: 0 50%;
+}
+
+#contact-graphic-top{
+    padding: 100px 60px 20px 60px;
 }

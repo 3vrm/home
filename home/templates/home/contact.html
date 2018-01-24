@@ -16,5 +16,19 @@
 		<li class="active"><a href="{% url "contactUs" %}">Contact Us</a></li>
 	</ul>
 </div>
-<h1>contact</h1>
+<div class="container">
+	<div class="contact" id="contact-graphic-top">
+		<img src="{% static "media/contact-graphic.png" %}">
+	</div>
+	<div class="contact" id="contact-intro">
+		<div class="marketing-site-hero-content">
+			<h1>Contact Us</h1>
+			<form role="form" action="" method="post">
+	    		{% csrf_token %}
+	   			 {{ form.as_p }}
+	  			<button class="round button" type="submit">Submit</button>
+			</form>
+		</div>
+	</div>
+</div>
 {% endblock %}
