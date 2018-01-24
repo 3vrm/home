@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %}3VRM{% endblock %}
+
+
+{% block content %}
+<div class="desktop-visible">	
+	<ul class="menu menu-hover-lines">
+		<li class="active"><a href="{% url "homepage" %}">Home</a></li>
+		<li><a href="{% url "about" %}">About 3VRM</a></li>
+		<li><a href="{% url "approach" %}">3VRM Approach</a></li>
+		<li><a href="{% url "services" %}">3VRM Services</a></li>
+		<li><a href="{% url "news" %}">3VRM News</a></li>
+		<li><a href="{% url "team" %}">3VRM Team</a></li>
+		<li><a href="{% url "contactUs" %}">Contact Us</a></li>
+	</ul>
+</div>
+<div class="container">
+		<div class="homepage" id="homepage-graphic">
+			<img src="{% static "media/homepage graphic.png" %}">
+	</div>
+	<div class="homepage" id="homepage-intro">
+		<div class="marketing-site-hero-content">
+			<h1>Solutions for Managing Third Party Risk & Vendor Relationships</h1>
+			<p class="subheader">3VRM is a specialist consultancy focussed on helping organisations to identify and manage risk through their third party supply chain and Vendor relationships.    We are a small network of skilled professionals expert in Third Party and Vendor Risk Management</p>
+			<a href="{% url "about" %}" class="round button">about 3VRM</a>
+		</div>
+	</div>
+</div>
+
+
+
+{% endblock %}

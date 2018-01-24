@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %}3VRM Approach{% endblock %}
+
+
+{% block content %}
+<div class="desktop-visible">	
+	<ul class="menu menu-hover-lines">
+		<li><a href="{% url "homepage" %}">Home</a></li>
+		<li><a href="{% url "about" %}">About 3VRM</a></li>
+		<li><a href="{% url "approach" %}">3VRM Approach</a></li>
+		<li><a href="{% url "services" %}">3VRM Services</a></li>
+		<li><a href="{% url "news" %}">3VRM News</a></li>
+		<li><a href="{% url "team" %}">3VRM Team</a></li>
+		<li class="active"><a href="{% url "contactUs" %}">Contact Us</a></li>
+	</ul>
+</div>
+<h1>contact</h1>
+{% endblock %}

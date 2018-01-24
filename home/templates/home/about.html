@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %}About 3VRM{% endblock %}
+
+
+{% block content %}
+<div class="desktop-visible">	
+	<ul class="menu menu-hover-lines">
+		<li><a href="{% url "homepage" %}">Home</a></li>
+		<li class="active"><a href="{% url "about" %}">About 3VRM</a></li>
+		<li><a href="{% url "approach" %}">3VRM Approach</a></li>
+		<li><a href="{% url "services" %}">3VRM Services</a></li>
+		<li><a href="{% url "news" %}">3VRM News</a></li>
+		<li><a href="{% url "team" %}">3VRM Team</a></li>
+		<li><a href="{% url "contactUs" %}">Contact Us</a></li>
+	</ul>
+</div>
+<div class="container">
+	<div class="about" id="about-graphic-top">
+		<img src="{% static "media/about graphic.png" %}">
+	</div>
+	<div class="about" id="about-intro">
+		<div class="marketing-site-hero-content">
+			<h1>Inventory of Third Party and Vector Risks™</h1>
+			<p class="subheader">We help organisations across industry sectors to identify, assess and manage Third Party and Vendor risk.</p>
+			<a href="#about-jump-link" class="round button">find out more</a>
+		</div>
+	</div>
+</div>
+<a id="about-jump-link"></a>
+<div class="about" id="about-graphic-breakdown">
+	<div class="marketing-site-hero-content">
+		<h1>We build solutions that are efficient, scalable and pragmatic.</h1>
+		<img src="{% static "media/3vrm about.png" %}">
+		</div>
+	</div>
+<div class="container">
+	<div class="about" id="about-list">
+		<div class="marketing-site-hero-content">
+			<h4>We do this using a variety of proprietary risk management tools and techniques, as well as leveraging some of the leading market products</h4>
+			<ul class="subheader">
+				<li>We perform diagnostic assessments and reviews to help identify areas to improve an organisation’s Third Party and Vendor risk management approach</li>
+				<li>We build entire risk management frameworks, running implementation programmes, establishing governance, policies and procedures</li>
+				<li>We help organisations assess their overall value at risk, determine an appropriate response and the level of resource they will deploy to mitigate risk</li>
+				<li>We run global training and communication programmes, developing capability and raising awareness</li>
+				<li>We resolve issues and problems by delivering targeted solutions that enhance or address specific areas within the overall risk management framework</li>
+				<li>We help clients to identify specific risk management tools, products or services that improve their e2e risk management process</li>
+			</ul>
+			<p class="subheader">The services we offer are based on our Inventory of Third Party and Vendor Risks™ and leverages our Third Party and Vendor Risk Framework™.</p>
+			<a href="{% url "approach" %}" class="round button">our approach</a>
+		</div>
+	</div>
+		<div class="about" id="about-graphic-bottom">
+			<img src="{% static "media/about graphic 2.png" %}">
+	</div>
+</div>
+
+{% endblock %}

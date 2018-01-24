@@ -1,0 +1,188 @@
+.desktop-visible {
+  display: none;
+}
+
+/*background image */
+body {
+    margin:0;
+    padding:0;
+    font-family:helvetica, sans-serif;
+    background-image: url("../media/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*header logo formatting */
+#title-image {
+  height: 40%;
+  width: 40%;
+}
+
+.hero-section {
+  border-style: groove;
+  border-width: 2px;
+  border-color: #2b4c93;
+  background: url("../media/banner.jpeg");
+  background-size: cover;
+  width: 100vw; 
+  text-align: left;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-justify-content: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.hero-section .hero-section-text {
+  color: #fefefe;
+  text-shadow: 1px 1px 2px #0a0a0a;
+}
+
+/*menu bar formatting */
+
+.title-bar-left, .title-bar-right {
+  background-color: rgba(63, 81, 181, 0.18);
+}
+/*homepage formatting*/
+
+.marketing-site-hero {
+  height: 65vh;
+  background-size: cover;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.marketing-site-hero-content {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.marketing-site-hero-content h1 {
+  font-size: 32px;
+}
+
+.marketing-site-hero-content .button.round {
+  border-radius: 5000px;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.subheader {
+  color: #3a3939;
+}
+
+/*services*/
+
+.flip-card {
+  -webkit-perspective: 1000;
+          perspective: 1000;
+  border: 0;
+  background: transparent;
+}
+
+.flip-card:hover .flip-card-inner,
+.flip-card.hover .flip-card-inner {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.flip-card,
+.flip-card-inner-front,
+.flip-card-inner-back {
+  width: 100%;
+  height: 30rem;
+}
+
+.flip-card-inner {
+  transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  position: relative;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.flip-card-inner-front,
+.flip-card-inner-back {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.flip-card-inner-front {
+  background: url("../media/box.png") no-repeat;
+  background-size: 100%;
+  background-position: center center;
+  z-index: 2;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flip-card-inner-front span {
+  width: 100%;
+  text-align: center;
+  background: rgba(254, 254, 254, 0.8);
+  padding: 0.25rem 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.flip-card-inner-back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  background: rgba(63, 81, 181, 0.28);
+  border-radius: 25px;
+  padding: 1rem;
+}
+
+.flip-card-inner-back-title {
+  font-weight: bold;
+}
+
+.callout.primary {
+  background-color: transparent;
+}
+
+.flip-card-inner-front span {
+  background: transparent;
+  text-shadow: 0 0 9px white;
+}
+
+.callout  {
+  border: none;
+}

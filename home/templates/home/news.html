@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %}3VRM Approach{% endblock %}
+
+
+{% block content %}
+<div class="desktop-visible">
+	<ul class="menu menu-hover-lines">
+		<li><a href="{% url "homepage" %}">Home</a></li>
+		<li><a href="{% url "about" %}">About 3VRM</a></li>
+		<li><a href="{% url "approach" %}">3VRM Approach</a></li>
+		<li><a href="{% url "services" %}">3VRM Services</a></li>
+		<li class="active"><a href="{% url "news" %}">3VRM News</a></li>
+		<li><a href="{% url "team" %}">3VRM Team</a></li>
+		<li><a href="{% url "contactUs" %}">Contact Us</a></li>
+	</ul>
+</div>
+</div>
+	<div class="twitter-feed">	
+<a class="twitter-timeline" data-width="400" data-height="600" data-dnt="true" href="https://twitter.com/3_vrm/lists/latest-news?ref_src=twsrc%5Etfw">A Twitter List by 3_vrm</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+{% endblock %}

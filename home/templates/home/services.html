@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %}3VRM Services{% endblock %}
+
+
+{% block content %}
+<div class="desktop-visible">	
+	<ul class="menu menu-hover-lines">
+		<li><a href="{% url "homepage" %}">Home</a></li>
+		<li><a href="{% url "about" %}">About 3VRM</a></li>
+		<li><a href="{% url "approach" %}">3VRM Approach</a></li>
+		<li class="active"><a href="{% url "services" %}">3VRM Services</a></li>
+		<li><a href="{% url "news" %}">3VRM News</a></li>
+		<li><a href="{% url "team" %}">3VRM Team</a></li>
+		<li><a href="{% url "contactUs" %}">Contact Us</a></li>
+	</ul>
+</div>
+<div class="container">
+		<div class="services" id="services-graphic">
+			<img src="{% static "media/services graphic.png" %}">
+	</div>
+	<div class="services" id="services-intro">
+		<div class="marketing-site-hero-content">
+			<h1>Our Services</h1>
+			<p class="subheader">The inventory of services we offer is based on our Inventory of Third Party and Vendor Risks™ and leverages our Third Party and Vendor Risk Framework™.</p>
+			<a href="#services-jump-link" class="round button">find out more</a>
+		</div>
+	</div>
+</div>
+<a id="services-jump-link"></a>
+<div id="services-desktop">
+<div class="grid-x grid-padding-x">
+	<div class="cell small-12 flex-container flex-dir-column large-flex-dir-row">
+		<div class="callout primary flex-child-auto">
+			<div class="callout primary flex-child-auto">
+				<div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
+					<div class="flip-card-inner">
+						<div class="flip-card-inner-front service-box">
+							<h3 class="flip-card-inner-front-title">Vendor Inventory Maintenance</h3>
+						</div>
+						<div class="flip-card-inner-back service-box">
+							<h3 class="flip-card-inner-back-title">Procurement Teams & Pre-Contract</h3>
+							<p class="flip-card-inner-back-text">Vendor Baselining</p>
+							<p class="flip-card-inner-back-text">Vendor Selection</p>
+							<p class="flip-card-inner-back-text">Vendor Segmentation</p>
+							<p class="flip-card-inner-back-text">Vendor Risk Assessment</p>
+							<p class="flip-card-inner-back-text">Vendor Due Diligence</p>
+							<p class="flip-card-inner-back-text">Contracting</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    <div class="callout primary flex-child-auto">
+		<div class="callout primary flex-child-auto">
+			<div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
+				<div class="flip-card-inner">
+					<div class="flip-card-inner-front service-box">
+						<h3 class="flip-card-inner-front-title">Vendor Management</h3>
+					</div>
+					<div class="flip-card-inner-back service-box">
+						<h3 class="flip-card-inner-back-title">Procurement Teams & Pre-Contract</h3>
+						<p class="flip-card-inner-back-text">Vendor Inventory Maintenance</p>
+						<p class="flip-card-inner-back-text">Vendor Segmentation Management</p>
+						<p class="flip-card-inner-back-text">Vendor Assurance</p>
+						<p class="flip-card-inner-back-text">Manage Performance</p>
+						<p class="flip-card-inner-back-text">Manage Risk</p>
+						<p class="flip-card-inner-back-text">Manage Contract</p>
+						<p class="flip-card-inner-back-text">Manage Relationship</p>
+						<p class="flip-card-inner-back-text">Raise Orders and Verify Receipt</p>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+    <div class="callout primary flex-child-auto">
+		<div class="callout primary flex-child-auto">
+			<div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
+				<div class="flip-card-inner">
+					<div class="flip-card-inner-front service-box">
+						<h3 class="flip-card-inner-front-title">Other Products & Services</h3>
+					</div>
+					<div class="flip-card-inner-back service-box">
+						<h3 class="flip-card-inner-back-title">Other Products and Services</h3>
+						<p class="flip-card-inner-back-text">Governance</p>
+						<p class="flip-card-inner-back-text">Policies, Standards and Procedures</p>
+						<p class="flip-card-inner-back-text">Third Party Vendor Risk Framework™</p>
+						<p class="flip-card-inner-back-text">Diagnose Third Party and Vendor Risk™</p>
+						<p class="flip-card-inner-back-text">Cost Third Party and Vendor Risk™ 	</p>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+  </div>
+  		<div class="marketing-site-hero-content" id="services-bottom-padding">
+  			<a href="{% url "team" %}" class="round button">meet the team</a>
+  		</div>
+</div>
+</div>
+{% endblock %}

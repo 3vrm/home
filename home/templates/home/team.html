@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %}3VRM Approach{% endblock %}
+
+
+{% block content %}
+<div class="desktop-visible">	
+	<ul class="menu menu-hover-lines">
+		<li><a href="{% url "homepage" %}">Home</a></li>
+		<li><a href="{% url "about" %}">About 3VRM</a></li>
+		<li><a href="{% url "approach" %}">3VRM Approach</a></li>
+		<li><a href="{% url "services" %}">3VRM Services</a></li>
+		<li><a href="{% url "news" %}">3VRM News</a></li>
+		<li class="active"><a href="{% url "team" %}">3VRM Team</a></li>
+		<li><a href="{% url "contactUs" %}">Contact Us</a></li>
+	</ul>
+</div>
+
+<div class="team-container">
+	<div class="team-picture">
+		<img src="{% static "media/ben.jpg" %}">
+	</div>
+	<div class="about team-text">
+		<div class="marketing-site-hero-content">
+			<h1>Ben Dickinson, FCCA</h1>
+			<h4>Founder and Managing Director of 3VRM Limited</h4>
+			<p class="subheader">Ben is the founder and owner of 3VRM, a specialist consulting firm focussed on Third Party Risk Management.  Ben has almost 20 year’s experience in risk management, assurance and advisory work, mainly in financial services.  As a Managing Director at Barclays and part of the Global Sourcing leadership team, Ben designed and led the firm’s Supplier Assurance capability, interacting with regulators and peer organisations to develop standards and approaches across various risk topics impacting Third Parties, including: Cyber, Security, Information Management, Resilience, Conduct, Regulatory Compliance, PCI-DSS, Sanctions and Anti-Bribery & Corruption.  He joined Barclays in 2004 and built the Internal Audit capability and methodology around Third Party Assurance, before leading a group-wide programme to implement a standard global framework covering all aspects of Third Party Management from initial selection and on-boarding through the full term of the relationship.  Prior to this, Ben trained as an accountant at Deloitte before focussing on Project Risk Management and Outsourcing Assurance.  3VRM are working with a number of leading technology companies who are committed to bringing innovative solutions to market to help improve approaches to Third Party Risk Management.</p>
+			<a href="mailto:ben.dickinson@3vrm.com" class="round button">contact ben</a>
+		</div>
+	</div>
+	<div class="team-picture">
+		<img src="{% static "media/andy-holiday.png" %}">
+	</div>
+	<div class="about team-text">
+		<div class="marketing-site-hero-content">
+			<h1>Andy Holiday</h1>
+			<h4>3VRM Associate</h4>
+			<p class="subheader">Andy is an experienced, energetic, enthusiastic and self-motivated IT and Risk professional and has over 20 years of experience in a variety of industries such as higher education, retail and banking.  With significant technical experience and knowledge, Andy specialises in cybersecurity and 3rd party risk management.</p>
+			<p class="subheader">Specialisms include:  Cyber Security / Cloud Computing / IT Governance / Security, Enterprise-wide and security strategy, objectives and delivery.  IT / Security management, structure and processes.  Outsourcing, Quality, Change Control, Contracts, 3rd Party Management, PCI-DSS, Audit, Risk Management, Change detection, Audit/Logging, Intrusion Prevention, Firewall Management, Cloud Computing, Digtal and Mobile technologies</p>
+			<a href="mailto:andy.holliday@3vrm.com" class="round button">contact Andy</a>
+		</div>
+	</div>
+</div>
+
+{% endblock %}

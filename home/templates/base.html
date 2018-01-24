@@ -1,0 +1,54 @@
+{% load staticfiles %}
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock %}</title>
+    <link rel="stylesheet" href="{% static "css/foundation.css" %}">
+    <link href="{% static "css/app-mobile.css" %}" media="screen and (max-width:420px)" rel="stylesheet">
+	<link href="{% static "css/app-desktop.css" %}" media="screen and (min-width:421px)" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+  </head>
+  <body>
+    <div>
+		<div class="hero-section">
+			<div class="hero-section-text">
+				<img id="title-image" src="{% static "media\3vrm final.png" %}">
+			</div>
+		</div>
+
+
+		<div class="mobile-visible">
+			<div class="title-bar-left">
+				<ul class="vertical menu accordion-menu" data-accordion-menu>
+					<li>
+					<a href="#"><button class="menu-icon" type="button"></button></a>
+						<ul class="menu vertical nested">
+							<li><a href="{% url "homepage" %}"><i class="fa fa-home title-bar-logo"></i></a></li>
+							<li><a href="#">About 3VRM</a></li>
+							<li><a href="#">3VRM Approach</a></li>
+							<li><a href="#">3VRM Services</a></li>
+							<li><a href="#">3VRM Team</a></li>
+							<li><a href="#">Contact Us</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+    </div>
+
+    <div id="content">      {% block content %}
+      {% endblock %}
+    </div>
+    
+    <script src="{% static "js/vendor/jquery.js" %}"></script>
+    <script src="{% static "js/vendor/what-input.js" %}"></script>
+    <script src="{% static "js/vendor/foundation.js" %}"></script>
+    <script>
+    	$(document).foundation();
+    </script>
+    <script src="{% static "js/app.js" %}""></script>
+  </body>
+</html>
