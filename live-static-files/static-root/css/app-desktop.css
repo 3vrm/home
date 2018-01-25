@@ -143,6 +143,7 @@ body {
 /*flip-card formatting*/
 
 .flip-card {
+  width: 20%;
   -webkit-perspective: 1000;
           perspective: 1000;
   border: 0;
@@ -255,9 +256,22 @@ body {
 
 /*services page formatting*/
 
-#services-desktop{
-  margin: auto;
-  width: 85%;
+.services-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+#service-box1{
+  padding:0rem 2rem 0rem 6rem;
+}
+
+#service-box2{
+  padding:0rem 2rem 0rem 2rem;
+}
+
+#service-box3{
+  padding:0rem 6rem 0rem 2rem;
 }
 
 .services{
@@ -276,6 +290,8 @@ body {
 .service-box {
   background: url("../media/Glass.png") no-repeat;
   background-size: cover;
+  font-size: 1.5vw;
+
 }
 
 #services-bottom-padding {
@@ -289,7 +305,6 @@ body {
 #services-text-bottom{
     padding: 100px 20px 60px 40px;
 }
-
 /*about page formatting*/
 
 #about-info{
@@ -350,11 +365,42 @@ body {
   width: 85%;
 }
 
+#approach-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  padding:0rem 4rem 0rem 4rem;
+}
+
+#approach-box1{
+  width:25%;
+  padding:0rem 3rem 0rem 3rem;
+}
+
+#approach-box2{
+  width: 25%;
+  padding:0rem 2rem 0rem 2rem;
+}
+
+#approach-box3{
+  width:25%;
+  padding:0rem 2rem 0rem 2rem;
+}
+
+#approach-box4{
+  width:25%;
+  padding:0rem 2rem 2rem 2rem;
+}
+
+#approach-box5{
+  height:auto;
+  font-size: 0.5vw;
+}
 
 .approach-box {
   background: url("../media/Glass.png") no-repeat;
   background-size: cover;
-  font-size: 1rem;
+  font-size: 1.2vw;
 }
 
 .approach-height {
@@ -364,14 +410,14 @@ body {
 .approach-assessment {
   margin: auto;
   height: 10rem;
-  width: 25rem;s
+  width: 25rem;
 }
 
-.approach-arrow {
+#approach-arrow {
   background-image: url("../media/glass-arrow.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: 80% 80%;
 }
 
 .approach-font {
@@ -384,11 +430,11 @@ body {
 }
 
 #approach-graphic-top{
-    padding: 100px 60px 30px 60px;
+    padding: 100px 60px 100px 60px;
 }
 
 #approach-intro{
-    padding: 130px 60px 30px 60px;
+    padding: 130px 60px 100px 60px;
 }
 
 #approach-graphic-bottom{
