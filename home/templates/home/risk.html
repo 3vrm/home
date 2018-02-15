@@ -1,0 +1,127 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %}Risk Profiling{% endblock %}
+
+
+{% block content %}
+<div id="risk">
+	<div>
+		<h3>Will the supplier transmit, store or process  Bank related data?
+			<label><input type="radio" name="q1" value="q1_yes" checked="checked" onclick="show_1();"> Yes</label>
+			<label><input type="radio" name="q1" value="q1_no" onclick="hide_1();" /> No</label>
+		</h3>
+	</div>
+
+	<div class="question" id="question_1">
+		<p>What classification of data will be accessed?
+			<ul>
+				<li><label><input type="radio" name="q1a" id="q1a_1" value="1"> Tier 1</label></li>
+				<li><label><input type="radio" name="q1a" id="q1a_2" value="2"> Tier 2</label></li>
+				<li><label><input type="radio" name="q1a" id="q1a_3" value="3"> Tier 3</label></li>
+				<li><label><input type="radio" name="q1a" id="q1a_4" value="4"> Tier 4</label></li>
+			</ul>
+		</p>
+		<p>Will there be any element of electronic access?
+			<ul>
+				<li><label><input type="radio" name="q1b" id="q1b_yes" value="q1b_yes"> Yes</label></li>
+				<li><label><input type="radio" name="q1b" id="q1b_no" value="q1b_no"> No</label></li>
+			</ul>
+		</p>
+	</div>
+
+	<div>
+		<h3>Will the supplier impact a bank Service or Business continuity tier?
+			<label><input type="radio" name="q2" value="q2_yes" checked="checked" onclick="show_2();"> Yes</label>
+			<label><input type="radio" name="q2" value="q2_no" onclick="hide_2();"> No</label>
+		</h3>
+	</div>
+	<div class="question" id="question_2">
+		<p>What tier?
+			<ul>
+				<li><label><input type="radio" name="q2a" id="q2a_1" value="q2a_1"> Tier 1</label></li>
+				<li><label><input type="radio" name="q2a" id="q2a_2" value="q2a_2"> Tier 2</label></li>
+				<li><label><input type="radio" name="q2a" id="q2a_3" value="q2a_3"> Tier 3</label></li>
+				<li><label><input type="radio" name="q2a" id="q2a_4" value="q2a_4"> Tier 4</label></li>
+			</ul>
+		</p>
+		<p>Will the supplier be responsible for availability?
+			<ul>
+				<li><label><input type="radio" name="q2b" id="q2b_yes" value="q2b_yes"> Yes</label></li>
+				<li><label><input type="radio" name="q2b" id="q2b_no" value="q2b_no"> No</label></li>
+			</ul>
+		</p>
+	</div>
+
+
+	<div>
+		<h3>Will the supplier have any remote connectivity to the bank network?
+			<label><input type="radio" name="q3" value="q3_yes" checked="checked" onclick="show_3();"> Yes</label>
+			<label><input type="radio" name="q3" value="q3_no" onclick="hide_3();"> No</label>
+		</h3>
+	</div>
+
+	<div class="question" id="question_3">
+		<p>Remote access type
+			<ul>
+				<li><label><input type="radio" name="q3a" id="q3a_1" value="q3a_1"> Dedicated Access e.g. leased line</label></li>
+				<li><label><input type="radio" name="q3a" id="q3a_2" value="q3a_2"> Supplier controlled equipment / access</label></li>
+				<li><label><input type="radio" name="q3a" id="q3a_3" value="q3a_3"> LBG Controlled Access</label></li>
+				<li><label><input type="radio" name="q3a" id="q3a_4" value="q3a_4"> No remote access</label></li>
+			</ul>
+		</p>
+		<p>Software Provision
+			<ul>
+				<li><label><input type="radio" name="q3b" id="q3b_1" value="q3b_1"> Supplier provides bespoke software development as part of the service </label></li>
+				<li><label><input type="radio" name="q3b" id="q3b_2" value="q3b_2"> Supplier provides commercial off the shelf software as part of the service </label></li>
+				<li><label><input type="radio" name="q3b" id="q3b_3" value="q3b_3"> No software provision as part of the service</label></li>
+			</ul>
+		</p>
+		<p>Crypto Relevance
+			<ul>
+				<li><label><input type="radio" name="q3c" id="q3c_yes" value="q3a_1"> Yes – Supplier will be managing / operating LBG Cryptographic Keys </label></li>
+				<li><label><input type="radio" name="q3c" id="q3c_no" value="q3a_2"> No – Supplier will not be managing / operating LBG Cryptographic Keys </label></li>
+			</ul>
+		</p>
+	</div>
+
+	<div>
+		<h3>Personal Data in Scope
+			<label><input type="radio" name="q4" id="q4_yes" value="q4_yes" checked="checked" onclick="show_4();"> Yes</label>
+			<label><input type="radio" name="q4" id="q4_no" value="q4_no" onclick="hide_4();"> No</label>
+		</h3>
+	</div>
+
+	<div class="question" id="question_4">
+		<p>Data Processor
+			<ul>
+				<li><label><input type="radio" name="q4a" id="q4a_yes" value="q4a_1"> Yes</label></li>
+				<li><label><input type="radio" name="q4a" id="q4a_no" value="q4a_2"> No</label></li>
+			</ul>
+		</p>
+		<p>Jurisdiction: Access Transmitted, Stored or Processed
+			<ul>
+				<li><label><input type="radio" name="q4b" id="q4b_1" value="q4b_1"> Outside of EU?</label></li>
+				<li><label><input type="radio" name="q4b" id="q4b_1" value="q4b_2"> Inside EU Only</label></li>
+			</ul>
+		</p>
+		<p>Data Type / Level
+			<ul>
+				<li><label><input type="radio" name="q4c" id="q4c_1" value="q4c_1"> Level 1</label></li>
+				<li><label><input type="radio" name="q4c" id="q4c_2" value="q4c_2"> Level 2</label></li>
+				<li><label><input type="radio" name="q4c" id="q4c_3" value="q4c_2"> Level 3</label></li>
+			</ul>
+		</p>
+		</p>Volume
+			<ul>
+				<li><label><input type="radio" name="q4d" id="q4d_1" value="q4d_1"> More than 1M</label></li>
+				<li><label><input type="radio" name="q4d" id="q4d_2" value="q4d_2"> >500k < 1M</label></li>
+				<li><label><input type="radio" name="q4d" id="q4d_3" value="q4d_2"> < 500K</label></li>
+			</ul>
+		</p>
+	</div>
+
+	<button class="round_button" type="submit" id="submit" onclick="tabulateAnswers()">Submit Your Answers</button>
+</div>
+
+{% endblock %}

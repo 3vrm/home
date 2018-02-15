@@ -43,4 +43,7 @@ def contactUs(request):
 	return render(request, "home/contact.html", {'form' : form})
 
 def successView(request):
-    return HttpResponse('Success! Thank you for your message.')
+	return HttpResponse('Success! Thank you for your message.')
+
+def risk(request):
+	return render(request, 'home/risk.html')
