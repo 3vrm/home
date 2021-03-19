@@ -10,7 +10,7 @@ django-zurb-foundation==5.5.0
 future==0.16.0
 gunicorn==19.7.1
 idna==2.6
-Jinja2==2.10
+Jinja2==2.11.3
 jinja2-time==0.2.0
 MarkupSafe==1.0
 poyo==0.4.1
